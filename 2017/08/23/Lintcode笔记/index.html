@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Find the missing Number | 鱼塘</title>
+  <title>lintcode笔记:Find the missing Number | 鱼塘</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Given an array contains N numbers of 0 .. N, find which number doesn’t exist in the array. Example :Given N = 3 and the array [0, 1, 3], return 2. first solution1234567class Solution:    # @param nums">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Find the missing Number">
+<meta property="og:title" content="lintcode笔记:Find the missing Number">
 <meta property="og:url" content="http://yoursite.com/2017/08/23/Lintcode笔记/index.html">
 <meta property="og:site_name" content="鱼塘">
 <meta property="og:description" content="Given an array contains N numbers of 0 .. N, find which number doesn’t exist in the array. Example :Given N = 3 and the array [0, 1, 3], return 2. first solution1234567class Solution:    # @param nums">
 <meta property="og:locale" content="zh-hans">
-<meta property="og:updated_time" content="2017-08-31T09:02:35.000Z">
+<meta property="og:updated_time" content="2017-08-31T09:09:42.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Find the missing Number">
+<meta name="twitter:title" content="lintcode笔记:Find the missing Number">
 <meta name="twitter:description" content="Given an array contains N numbers of 0 .. N, find which number doesn’t exist in the array. Example :Given N = 3 and the array [0, 1, 3], return 2. first solution1234567class Solution:    # @param nums">
   
     <link rel="alternative" href="/atom.xml" title="鱼塘" type="application/atom+xml">
@@ -161,7 +161,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Find the missing Number
+      lintcode笔记:Find the missing Number
     </h1>
   
 
@@ -180,8 +180,7 @@
 <blockquote>
 <p>set集合不能通过索引进行查找对象，只能通过pop</p>
 </blockquote>
-<p>####九章算法<br><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></div><div class="line">    <span class="comment"># @param nums: a list of integers</span></div><div class="line">    <span class="comment"># @return: an integer</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">findMissing</span><span class="params">(self, nums)</span>:</span></div><div class="line">        s = set(nums)</div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(nums) + <span class="number">1</span>):</div><div class="line">            <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> s:</div><div class="line">                <span class="keyword">return</span> i</div><div class="line">        <span class="keyword">return</span> <span class="number">-1</span></div></pre></td></tr></table></figure></p>
-
+<h4 id="九章算法"><a href="#九章算法" class="headerlink" title="九章算法"></a>九章算法</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></div><div class="line">    <span class="comment"># @param nums: a list of integers</span></div><div class="line">    <span class="comment"># @return: an integer</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">findMissing</span><span class="params">(self, nums)</span>:</span></div><div class="line">        s = set(nums)</div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>, len(nums) + <span class="number">1</span>):</div><div class="line">            <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> s:</div><div class="line">                <span class="keyword">return</span> i</div><div class="line">        <span class="keyword">return</span> <span class="number">-1</span></div></pre></td></tr></table></figure>
       
 
       
