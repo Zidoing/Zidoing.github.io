@@ -99,7 +99,7 @@
 <meta property="og:site_name" content="鱼塘">
 <meta property="og:description" content="给出2*n + 1 个的数字，除其中一个数字之外其他每个数字均出现两次，找到这个数字。 样例给出 [1,2,2,1,3,4,3]，返回 4 solution12345678910111213class Solution:    &quot;&quot;&quot;    @param: A: An integer array    @return: An integer    &quot;&quot;&quot;    def singleNumber(s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-18T07:46:30.000Z">
+<meta property="og:updated_time" content="2017-09-18T08:09:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="lintcode笔记:落单的数  single number">
 <meta name="twitter:description" content="给出2*n + 1 个的数字，除其中一个数字之外其他每个数字均出现两次，找到这个数字。 样例给出 [1,2,2,1,3,4,3]，返回 4 solution12345678910111213class Solution:    &quot;&quot;&quot;    @param: A: An integer array    @return: An integer    &quot;&quot;&quot;    def singleNumber(s">
@@ -371,6 +371,9 @@
         <p>给出2*n + 1 个的数字，除其中一个数字之外其他每个数字均出现两次，找到这个数字。</p>
 <p>样例<br>给出 [1,2,2,1,3,4,3]，返回 4</p>
 <h4 id="solution"><a href="#solution" class="headerlink" title="solution"></a>solution</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line"><span class="string">    @param: A: An integer array</span></div><div class="line"><span class="string">    @return: An integer</span></div><div class="line"><span class="string">    """</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">singleNumber</span><span class="params">(self, A)</span>:</span></div><div class="line">        <span class="comment"># write your code here</span></div><div class="line">        <span class="keyword">from</span> collections <span class="keyword">import</span> Counter</div><div class="line">        answer = Counter(A)</div><div class="line">        <span class="keyword">for</span> key <span class="keyword">in</span> answer:</div><div class="line">            <span class="keyword">if</span> answer[key] == <span class="number">1</span>:</div><div class="line">                <span class="keyword">return</span> key</div><div class="line">        <span class="keyword">return</span> <span class="number">0</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p>提示 x^x = 0  </p>
+</blockquote>
 <h4 id="other"><a href="#other" class="headerlink" title="other"></a>other</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></div><div class="line">    <span class="string">"""</span></div><div class="line"><span class="string">   @param A : an integer array</span></div><div class="line"><span class="string">   @return : a integer</span></div><div class="line"><span class="string">   """</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">singleNumber</span><span class="params">(self, A)</span>:</span></div><div class="line">        <span class="comment"># write your code here</span></div><div class="line">        ans = <span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span> x <span class="keyword">in</span> A:</div><div class="line">            ans = ans ^ x</div><div class="line">        <span class="keyword">return</span> ans</div></pre></td></tr></table></figure>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span>:</span></div><div class="line">    <span class="comment"># @param A, a list of integer</span></div><div class="line">    <span class="comment"># @return an integer</span></div><div class="line">    <span class="function"><span class="keyword">def</span> <span class="title">singleNumber</span><span class="params">(self, A)</span>:</span></div><div class="line">        A.sort()</div><div class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>, len(A), <span class="number">2</span>):</div><div class="line">            <span class="keyword">if</span> A[i] != A[i<span class="number">-1</span>]: <span class="comment"># 与前一元素对比</span></div><div class="line">                <span class="keyword">return</span> A[i<span class="number">-1</span>]</div><div class="line">        <span class="keyword">return</span> A[<span class="number">-1</span>] <span class="comment"># 要找的元素是最后一个元素</span></div></pre></td></tr></table></figure>
       
@@ -405,6 +408,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/18/lincode3/" rel="prev" title="lintcode笔记:落单的数 II  single number II">
+                lintcode笔记:落单的数 II  single number II <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -483,7 +490,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
