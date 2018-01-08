@@ -1,98 +1,11 @@
 <!DOCTYPE html>
-
-
-
-
-<html class="theme-next pisces" lang="zh-Hans">
+<html lang=zh>
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
+    <meta charset="utf-8">
     
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="笔记,数据结构," />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
-
-
-
-
-
-
-<meta name="description" content="第一章数据结构绪论基本概念和术语数据数据是描述客观事物的符号，是计算机中可以操作的对象，能被计算机识别，并输入给计算机处理的符号集合。 数据项数据项:一个数据元素可以由若干个数据项组成。（例如Student里面的name，age等等属性int,float,char等）数据项是最小的单位，不可分割。但是实际讨论是一般都是直接说某个结构体即数据元素。 数据元素数据元素：是组成数据的、有一定意义的基本单">
+    <title>大话数据结构笔记 | 鱼塘</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="第一章数据结构绪论基本概念和术语数据数据是描述客观事物的符号，是计算机中可以操作的对象，能被计算机识别，并输入给计算机处理的符号集合。 数据项数据项:一个数据元素可以由若干个数据项组成。（例如Student里面的name，age等等属性int,float,char等）数据项是最小的单位，不可分割。但是实际讨论是一般都是直接说某个结构体即数据元素。 数据元素数据元素：是组成数据的、有一定意义的基本单">
 <meta name="keywords" content="笔记,数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="大话数据结构笔记">
@@ -104,294 +17,244 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="大话数据结构笔记">
 <meta name="twitter:description" content="第一章数据结构绪论基本概念和术语数据数据是描述客观事物的符号，是计算机中可以操作的对象，能被计算机识别，并输入给计算机处理的符号集合。 数据项数据项:一个数据元素可以由若干个数据项组成。（例如Student里面的name，age等等属性int,float,char等）数据项是最小的单位，不可分割。但是实际讨论是一般都是直接说某个结构体即数据元素。 数据元素数据元素：是组成数据的、有一定意义的基本单">
+    
 
+    
+        <link rel="alternate" href="/" title="鱼塘" type="application/atom+xml" />
+    
 
+    
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: false,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
+    <link rel="stylesheet" href="/css/style.css">
 
-
-  <link rel="canonical" href="http://yoursite.com/2017/08/21/大话数据结构/"/>
-
-
-
-
-
-  <title>大话数据结构笔记 | 鱼塘</title>
-  
-
-
-
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?4a900dae6a226bd6a127c9f8dc50067c";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-
-
-
-
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+    
 
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">鱼塘</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle">写写经历</p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/21/大话数据结构/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Zidon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="鱼塘">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">大话数据结构笔记</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-21T22:44:30+08:00">
-                2017-08-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/学习笔记/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
-                  </a>
-                </span>
-
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">鱼塘</span>
+            </a>
+            <nav id="main-nav">
                 
+                    <a class="main-nav-link" href="/.">Home</a>
                 
-              
-            </span>
-          
-
-          
+                    <a class="main-nav-link" href="/archives">Archives</a>
+                
+                    <a class="main-nav-link" href="/categories">Categories</a>
+                
+                    <a class="main-nav-link" href="/tags">Tags</a>
+                
+                    <a class="main-nav-link" href="/about">About</a>
+                
+            </nav>
             
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2017/08/21/大话数据结构/#SOHUCS" itemprop="discussionUrl">
-                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/08/21/大话数据结构/" itemprop="commentsCount"></span>
-                </a>
-              
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/css/images/avatar.png" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
             
-          
+            <div id="search-form-wrap">
 
-          
-          
-
-          
-
-          
-
-          
-
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
-      </header>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Entradas',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">About</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/css/images/avatar.png" />
+            <h2 id="name">PPOffice</h2>
+            <h3 id="title">Web Developer &amp; Designer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Harbin, China</span>
+            <a id="follow" target="_blank" href="https://github.com/ppoffice/">SEGUIR</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                8
+                <span>Entradas</span>
+            </div>
+            <div class="article-info-block">
+                4
+                <span>Etiquetas</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class=tooltip>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class=tooltip>
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-大话数据结构" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            大话数据结构笔记
+        </h1>
     
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/08/21/大话数据结构/">
+            <time datetime="2017-08-21T14:44:30.000Z" itemprop="datePublished">2017-08-21</time>
+        </a>
+    </div>
 
-      
-      
 
-      
-        <h1 id="第一章数据结构绪论"><a href="#第一章数据结构绪论" class="headerlink" title="第一章数据结构绪论"></a>第一章数据结构绪论</h1><h2 id="基本概念和术语"><a href="#基本概念和术语" class="headerlink" title="基本概念和术语"></a>基本概念和术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p>数据是描述客观事物的符号，是计算机中可以操作的对象，能被计算机识别，并输入给计算机处理的符号集合。</p>
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/学习笔记/">学习笔记</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/数据结构/">数据结构</a>, <a class="tag-link" href="/tags/笔记/">笔记</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <h1 id="第一章数据结构绪论"><a href="#第一章数据结构绪论" class="headerlink" title="第一章数据结构绪论"></a>第一章数据结构绪论</h1><h2 id="基本概念和术语"><a href="#基本概念和术语" class="headerlink" title="基本概念和术语"></a>基本概念和术语</h2><h3 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h3><p>数据是描述客观事物的符号，是计算机中可以操作的对象，能被计算机识别，并输入给计算机处理的符号集合。</p>
 <h3 id="数据项"><a href="#数据项" class="headerlink" title="数据项"></a>数据项</h3><p>数据项:一个数据元素可以由若干个数据项组成。（例如Student里面的name，age等等属性int,float,char等）数据项是最小的单位，不可分割。但是实际讨论是一般都是直接说某个结构体即数据元素。</p>
 <h3 id="数据元素"><a href="#数据元素" class="headerlink" title="数据元素"></a>数据元素</h3><p>数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。（例如c中struct Student这个结构体）</p>
 <h3 id="数据对象（按照一个对象理解）"><a href="#数据对象（按照一个对象理解）" class="headerlink" title="数据对象（按照一个对象理解）"></a>数据对象（按照一个对象理解）</h3><p>数据对象：是性质相同的元素的集合，是数据的子集。（一群数据的集合。例如python中list，string）</p>
@@ -510,407 +373,310 @@
 <h2 id="栈的应用"><a href="#栈的应用" class="headerlink" title="栈的应用"></a>栈的应用</h2><h3 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h3><p>实用递归的生活必须有相关的退出条件，否则会导致无限递归中。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//</span></div><div class="line"><span class="comment">// Created by 周磊 on 29/08/2017.</span></div><div class="line"><span class="comment">//</span></div><div class="line"></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></div><div class="line"></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">Fbi</span><span class="params">(<span class="keyword">int</span> i)</span> </span>&#123;</div><div class="line">    <span class="keyword">if</span> (i &lt; <span class="number">2</span>) &#123;</div><div class="line">        <span class="keyword">return</span> i == <span class="number">0</span> ? <span class="number">0</span> : <span class="number">1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> Fbi(i - <span class="number">1</span>) + Fbi(i - <span class="number">2</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> i;</div><div class="line">    <span class="keyword">int</span> a[<span class="number">40</span>];</div><div class="line">    a[<span class="number">0</span>] = <span class="number">0</span>;</div><div class="line">    a[<span class="number">1</span>] = <span class="number">1</span>;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[<span class="number">0</span>]);</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[<span class="number">1</span>]);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">2</span>; j &lt; <span class="number">40</span>; ++j) &#123;</div><div class="line">        a[j] = a[j - <span class="number">1</span>] + a[j - <span class="number">2</span>];</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, a[j]);</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">printf</span>(<span class="string">"\n"</span>);</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">40</span>; ++k) &#123;   <span class="comment">//递归比较消耗资源，实际运行中有点慢</span></div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>, Fbi(k));</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line"></div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="四则运算表达式求值"><a href="#四则运算表达式求值" class="headerlink" title="四则运算表达式求值"></a>四则运算表达式求值</h3><h4 id="后缀（逆波兰）表示法"><a href="#后缀（逆波兰）表示法" class="headerlink" title="后缀（逆波兰）表示法"></a>后缀（逆波兰）表示法</h4>
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/笔记/" rel="tag"># 笔记</a>
-          
-            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
-          
+        
         </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/23/lintcode1/" rel="prev" title="Lintcode:Find the missing Number">
-                Lintcode:Find the missing Number <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
+        <footer class="article-footer">
+            <div class="share-container">
 
 
 
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
-    
-      <div id="SOHUCS"></div>
-    
-  </div>
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.png"
-               alt="Zidon" />
-          <p class="site-author-name" itemprop="name">Zidon</p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives/">
-                <span class="site-state-item-count">8</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-categories">
-              <a href="/categories/index.html">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
-            </div>
-          
-
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">4</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/Zidoing" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                    
-                      GitHub
-                    
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.zhihu.com/people/zhou-lei-65-12/activities" target="_blank" title="知乎">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                    
-                      知乎
-                    
-                </a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章数据结构绪论"><span class="nav-number">1.</span> <span class="nav-text">第一章数据结构绪论</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#基本概念和术语"><span class="nav-number">1.1.</span> <span class="nav-text">基本概念和术语</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据"><span class="nav-number">1.1.1.</span> <span class="nav-text">数据</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据项"><span class="nav-number">1.1.2.</span> <span class="nav-text">数据项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据元素"><span class="nav-number">1.1.3.</span> <span class="nav-text">数据元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据对象（按照一个对象理解）"><span class="nav-number">1.1.4.</span> <span class="nav-text">数据对象（按照一个对象理解）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据结构"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">数据结构</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#逻辑结构与物理结构"><span class="nav-number">1.2.</span> <span class="nav-text">逻辑结构与物理结构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#逻辑结构"><span class="nav-number">1.2.1.</span> <span class="nav-text">逻辑结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#物理结构"><span class="nav-number">1.2.2.</span> <span class="nav-text">物理结构</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#抽象数据结构类型"><span class="nav-number">1.3.</span> <span class="nav-text">抽象数据结构类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二章算法"><span class="nav-number">2.</span> <span class="nav-text">第二章算法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#算法定义"><span class="nav-number">2.1.</span> <span class="nav-text">算法定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法特性"><span class="nav-number">2.2.</span> <span class="nav-text">算法特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法设计的要求"><span class="nav-number">2.3.</span> <span class="nav-text">算法设计的要求</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#算法效率的度量方法"><span class="nav-number">2.4.</span> <span class="nav-text">算法效率的度量方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#事后统计方法"><span class="nav-number">2.4.1.</span> <span class="nav-text">事后统计方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#事前分析估算方法"><span class="nav-number">2.4.2.</span> <span class="nav-text">事前分析估算方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#函数的渐进增长"><span class="nav-number">2.4.2.1.</span> <span class="nav-text">函数的渐进增长</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三章线性表"><span class="nav-number">3.</span> <span class="nav-text">第三章线性表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#线性表"><span class="nav-number">3.1.</span> <span class="nav-text">线性表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序存储定义"><span class="nav-number">3.2.</span> <span class="nav-text">顺序存储定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序存储结构的插入与删除"><span class="nav-number">3.3.</span> <span class="nav-text">顺序存储结构的插入与删除</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#线性表顺序存储结构的优缺点"><span class="nav-number">3.3.1.</span> <span class="nav-text">线性表顺序存储结构的优缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#线性表的链式存储结构"><span class="nav-number">3.4.</span> <span class="nav-text">线性表的链式存储结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#单链表"><span class="nav-number">3.4.0.1.</span> <span class="nav-text">单链表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#头指针"><span class="nav-number">3.4.0.2.</span> <span class="nav-text">头指针</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#结点"><span class="nav-number">3.4.0.3.</span> <span class="nav-text">结点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单链表的增删改查"><span class="nav-number">3.4.1.</span> <span class="nav-text">单链表的增删改查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#单链表结构与顺序存储结构优缺点"><span class="nav-number">3.4.2.</span> <span class="nav-text">单链表结构与顺序存储结构优缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#静态链表"><span class="nav-number">3.5.</span> <span class="nav-text">静态链表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态链表优缺点"><span class="nav-number">3.5.1.</span> <span class="nav-text">静态链表优缺点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#循环链表"><span class="nav-number">3.6.</span> <span class="nav-text">循环链表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#双向链表"><span class="nav-number">3.7.</span> <span class="nav-text">双向链表</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第四章栈和队列"><span class="nav-number">4.</span> <span class="nav-text">第四章栈和队列</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#栈的定义"><span class="nav-number">4.1.</span> <span class="nav-text">栈的定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#两栈共享空间"><span class="nav-number">4.2.</span> <span class="nav-text">两栈共享空间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#链栈"><span class="nav-number">4.3.</span> <span class="nav-text">链栈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#栈的应用"><span class="nav-number">4.4.</span> <span class="nav-text">栈的应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#递归"><span class="nav-number">4.4.1.</span> <span class="nav-text">递归</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#四则运算表达式求值"><span class="nav-number">4.4.2.</span> <span class="nav-text">四则运算表达式求值</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#后缀（逆波兰）表示法"><span class="nav-number">4.4.2.1.</span> <span class="nav-text">后缀（逆波兰）表示法</span></a></li></ol></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Zidon</span>
 </div>
 
+    <a data-url="http://yoursite.com/2017/08/21/大话数据结构/" data-id="cjc5r250c000ak10qi4i2qxq8" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
 
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
+            if ($('#' + id).length) {
+                box = $('#' + id);
 
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
 
-        
+              box = $(html);
 
-        
-      </div>
-    </footer>
+              $('body').append(box);
+            }
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
+            $('.article-share-box.on').hide();
 
-  </div>
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
 
-  
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
 
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
 </script>
 
-
-
-
-
-
-
-
-
-  
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-  
-  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-  
-    <script type="text/javascript">
-    (function(){
-      var appid = 'cysYWEiWv';
-      var conf = '2c36ae76534e447eba254e647a92a6cb';
-      var width = window.innerWidth || document.documentElement.clientWidth;
-      if (width < 960) {
-      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
-        window.changyan.api.config({appid:appid,conf:conf})});
-      }
-    })();
-    </script>
-    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
-  
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
+            
+    
+
+        </footer>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2017/08/23/lintcode1/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Más nuevo</strong>
+            <div class="article-nav-title">
+                
+                    Lintcode:Find the missing Number
+                
+            </div>
+        </a>
+    
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Recientes</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/12/01/django/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/12/01/django/" class="title">django</a></p>
+                            <p class="item-date"><time datetime="2017-12-01T14:23:13.000Z" itemprop="datePublished">2017-12-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/20/lintcode5/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/算法/">算法</a></p>
+                            <p class="item-title"><a href="/2017/09/20/lintcode5/" class="title">斐波纳契数列    fibonacci</a></p>
+                            <p class="item-date"><time datetime="2017-09-20T14:32:42.000Z" itemprop="datePublished">2017-09-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/20/lintcode4/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/算法/">算法</a></p>
+                            <p class="item-title"><a href="/2017/09/20/lintcode4/" class="title">单词的添加与查找   Add and Search Word</a></p>
+                            <p class="item-date"><time datetime="2017-09-20T01:19:14.000Z" itemprop="datePublished">2017-09-20</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/18/lintcode3/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/算法/">算法</a></p>
+                            <p class="item-title"><a href="/2017/09/18/lintcode3/" class="title">LintCode:落单的数 II  single number II</a></p>
+                            <p class="item-date"><time datetime="2017-09-18T07:57:30.000Z" itemprop="datePublished">2017-09-18</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/09/18/lintcode2/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/算法/">算法</a></p>
+                            <p class="item-title"><a href="/2017/09/18/lintcode2/" class="title">LintCode:落单的数  single number</a></p>
+                            <p class="item-date"><time datetime="2017-09-18T07:33:39.000Z" itemprop="datePublished">2017-09-18</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Categorias</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习笔记/">学习笔记</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/算法/">算法</a><span class="category-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Archivos</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a><span class="archive-list-count">3</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Etiquetas</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/LintCode/">LintCode</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/数据结构/">数据结构</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/笔记/">笔记</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/算法/">算法</a><span class="tag-list-count">5</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">Nube de etiquetas</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/LintCode/" style="font-size: 20px;">LintCode</a> <a href="/tags/数据结构/" style="font-size: 10px;">数据结构</a> <a href="/tags/笔记/" style="font-size: 15px;">笔记</a> <a href="/tags/算法/" style="font-size: 20px;">算法</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">Links</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2018 Zidon<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
+        </div>
+    </div>
+</footer>
+        
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
 </body>
 </html>
