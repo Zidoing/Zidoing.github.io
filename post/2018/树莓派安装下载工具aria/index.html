@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>树莓派安装下载工具aria - LAYIN. - Lay In A Summer Sky!</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="LAYIN." /><meta name="description" content="下载源文件 并修改 1 2 3 4 5 6 7 8 9 10 11 12 13 14 git clone https://github.com/aria2/aria2.git vi aria2/src/OptionHandlerFactory.cc OptionHandler* op(new NumberOptionHandler(PREF_MAX_CONNECTION_PER_SERVER, TEXT_MAX_CONNECTION_PER_SERVER, // &amp;#34;1&amp;#34;, 1, 16, &amp;#39;x&amp;#39;)); &amp;#34;1&amp;#34;, 1, 256, &amp;#39;x&amp;#39;)); ### 用于修改每个服务器最大连接数 OptionHandler* op(new UnitNumberOptionHandler( -------------------------------------------------------------------------------- //PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &amp;#34;1M&amp;#34;, 1_m, 1_g, &amp;#39;k&amp;#39;)); PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &amp;#34;1M&amp;#34;, 256_k, 1_g," /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.70.0 with theme even" />
+
+
+<link rel="canonical" href="https://daodaoio.com/post/2018/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7aria/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.2e81bbed97b8b282c1aeb57488cc71c8d8c8ec559f3931531bd396bf31e0d4dd.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="树莓派安装下载工具aria" />
+<meta property="og:description" content="下载源文件 并修改 1 2 3 4 5 6 7 8 9 10 11 12 13 14 git clone https://github.com/aria2/aria2.git vi aria2/src/OptionHandlerFactory.cc OptionHandler* op(new NumberOptionHandler(PREF_MAX_CONNECTION_PER_SERVER, TEXT_MAX_CONNECTION_PER_SERVER, // &#34;1&#34;, 1, 16, &#39;x&#39;)); &#34;1&#34;, 1, 256, &#39;x&#39;)); ### 用于修改每个服务器最大连接数 OptionHandler* op(new UnitNumberOptionHandler( -------------------------------------------------------------------------------- //PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 1_m, 1_g, &#39;k&#39;)); PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 256_k, 1_g," />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://daodaoio.com/post/2018/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7aria/" />
+<meta property="article:published_time" content="2018-12-28T03:07:32+00:00" />
+<meta property="article:modified_time" content="2018-12-28T03:07:32+00:00" />
+<meta itemprop="name" content="树莓派安装下载工具aria">
+<meta itemprop="description" content="下载源文件 并修改 1 2 3 4 5 6 7 8 9 10 11 12 13 14 git clone https://github.com/aria2/aria2.git vi aria2/src/OptionHandlerFactory.cc OptionHandler* op(new NumberOptionHandler(PREF_MAX_CONNECTION_PER_SERVER, TEXT_MAX_CONNECTION_PER_SERVER, // &#34;1&#34;, 1, 16, &#39;x&#39;)); &#34;1&#34;, 1, 256, &#39;x&#39;)); ### 用于修改每个服务器最大连接数 OptionHandler* op(new UnitNumberOptionHandler( -------------------------------------------------------------------------------- //PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 1_m, 1_g, &#39;k&#39;)); PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 256_k, 1_g,">
+<meta itemprop="datePublished" content="2018-12-28T03:07:32&#43;00:00" />
+<meta itemprop="dateModified" content="2018-12-28T03:07:32&#43;00:00" />
+<meta itemprop="wordCount" content="1688">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="树莓派安装下载工具aria"/>
+<meta name="twitter:description" content="下载源文件 并修改 1 2 3 4 5 6 7 8 9 10 11 12 13 14 git clone https://github.com/aria2/aria2.git vi aria2/src/OptionHandlerFactory.cc OptionHandler* op(new NumberOptionHandler(PREF_MAX_CONNECTION_PER_SERVER, TEXT_MAX_CONNECTION_PER_SERVER, // &#34;1&#34;, 1, 16, &#39;x&#39;)); &#34;1&#34;, 1, 256, &#39;x&#39;)); ### 用于修改每个服务器最大连接数 OptionHandler* op(new UnitNumberOptionHandler( -------------------------------------------------------------------------------- //PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 1_m, 1_g, &#39;k&#39;)); PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 256_k, 1_g,"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">LAYIN.</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">LAYIN.</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">树莓派安装下载工具aria</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-12-28 </span>
+        
+          <span class="more-meta"> 约 1688 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li></li>
+            <li><a href="#若在centos-环境下安装">若在centos 环境下安装</a></li>
+            <li><a href="#若出现字符问题">若出现字符问题</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h4 id="下载源文件-并修改">下载源文件 并修改</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">git clone https://github.com/aria2/aria2.git
+
+vi aria2/src/OptionHandlerFactory.cc
+
+
+OptionHandler* op(new NumberOptionHandler(PREF_MAX_CONNECTION_PER_SERVER,
+                                              TEXT_MAX_CONNECTION_PER_SERVER,
+                                           // &#34;1&#34;, 1, 16, &#39;x&#39;));
+                                              &#34;1&#34;, 1, 256, &#39;x&#39;));  ### 用于修改每个服务器最大连接数
+  OptionHandler* op(new UnitNumberOptionHandler(
+--------------------------------------------------------------------------------
+//PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 1_m, 1_g, &#39;k&#39;));
+ PREF_MIN_SPLIT_SIZE, TEXT_MIN_SPLIT_SIZE, &#34;1M&#34;, 256_k, 1_g, &#39;k&#39;)); # 用于调整每个文件拆分
+
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="编译初始包">编译初始包</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">apt-get install libgnutls28-dev nettle-dev libgmp-dev libssh2-1-dev libc-ares-dev libxml2-dev zlib1g-dev libsqlite3-dev pkg-config libcppunit-dev autoconf automake autotools-dev autopoint libtool git gcc g++ libxml2-dev make quilt  libsysfs-dev -y
+</code></pre></td></tr></table>
+</div>
+</div><p>需要安装这些依赖包防止编译出现问题</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd aria2
+
+autoconf -i  若出现其他异常可以尝试重新 autoreconf -i
+
+./configure &amp;&amp; make &amp;&amp; make install 
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">编译过程中可能出现异常
+
+getrandom_linux.c:40:24: fatal error: sys/random.h: No such file or directory
+ #include &lt;sys/random.h&gt;
+                        ^
+compilation terminated.
+Makefile:2276: recipe for target &#39;getrandom_linux.lo&#39; failed
+make[3]: *** [getrandom_linux.lo] Error 1
+make[3]: Leaving directory &#39;/opt/aria2/src&#39;
+Makefile:2341: recipe for target &#39;all-recursive&#39; failed
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory &#39;/opt/aria2/src&#39;
+Makefile:556: recipe for target &#39;all-recursive&#39; failed
+make[1]: *** [all-recursive] Error 1
+make[1]: Leaving directory &#39;/opt/aria2&#39;
+Makefile:467: recipe for target &#39;all&#39; failed
+make: *** [all] Error 2
+
+
+解决方案 vim /src/getrandom_linux.c   注释掉  /* #include &lt;sys/random.h&gt; */ 即可
+</code></pre></td></tr></table>
+</div>
+</div><p>编译过程真的是很漫长啊  c++ 编译果然名不虚传. 主要还是树莓派性能问题<br>
+直到编译完成 可以通过 aria2 -D 启动</p>
+<h4 id="aria2-配置文件">aria2 配置文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">mkdir ~/aria2 &amp;&amp; touch aria2.conf &amp;&amp; aria2.session
+vim aria2.conf
+
+
+# 基本配置
+# 下载目录
+dir=/mnt/B4T/Downloads
+# 下载从这个文件中找到的urls, 需自己建立这个文件
+# touch /home/pi/.aria2/aria2.session
+input-file=/root/aria2/aria2.session
+# 最大同时下载任务数，默认 5
+max-concurrent-downloads=20
+# 断点续传，只适用于 HTTP(S)/FTP
+continue=true
+# HTTP/FTP 配置
+# 关闭连接如果下载速度等于或低于这个值，默认 0
+#lowest-speed-limit=0
+# 对于每个下载在同一个服务器上的连接数，默认 1
+max-connection-per-server=256
+# 每个文件最小分片大小，例如文件 20M，设置 size 为 10M, 则用2个连接下载，默认 20M
+min-split-size=256k
+# 下载一个文件的连接数，默认 5
+split=256
+# BT 特殊配置
+# 启用本地节点查找，默认 false
+bt-enable-lpd=true
+# 指定最大文件数对于每个 bt 下载，默认 100
+#bt-max-open-files=100
+# 单种子最大连接数，默认 55
+bt-max-peers=128
+# 设置最低的加密级别，可选全连接加密 arc4，默认是头加密 plain
+#bt-min-crypto-level=plain
+# 总是使用 obfuscation handshake，防迅雷必备，默认 false
+bt-require-crypto=true
+# 如果下载的是种子文件则自动解析并下载，默认 true
+#follow-torrent=true
+
+bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,udp://tracker.opentrackr.org:1337/announce,udp://tracker.internetwarriors.net:1337/announce,http://tracker.internetwarriors.net:1337/announce,udp://9.rarbg.to:2710/announce,udp://exodus.desync.com:6969/announce,udp://explodie.org:6969/announce,http://explodie.org:6969/announce,udp://public.popcorn-tracker.org:6969/announce,http://tracker.vanitycore.co:6969/announce,udp://tracker.vanitycore.co:6969/announce,udp://tracker1.itzmx.com:8080/announce,udp://ipv4.tracker.harry.lu:80/announce,http://tracker1.itzmx.com:8080/announce,udp://tracker.tiny-vps.com:6969/announce,udp://tracker.port443.xyz:6969/announce,udp://thetracker.org:80/announce,udp://open.stealth.si:80/announce,udp://open.demonii.si:1337/announce,udp://denis.stalker.upeer.me:6969/announce,udp://bt.xxx-tracker.com:2710/announce,http://tracker.port443.xyz:6969/announce,udp://tracker.torrent.eu.org:451/announce,udp://retracker.lanta-net.ru:2710/announce,udp://zephir.monocul.us:6969/announce,udp://tracker.uw0.xyz:6969/announce,udp://tracker.toss.li:6969/announce,udp://tracker.cypherpunks.ru:6969/announce,http://tracker.cypherpunks.ru:6969/announce,http://torrent.nwps.ws:80/announce,http://retracker.telecom.by:80/announce,http://open.acgnxtracker.com:80/announce,wss://ltrackr.iamhansen.xyz:443/announce,udp://tracker.iamhansen.xyz:2000/announce,https://tracker.fastdownload.xyz:443/announce,https://opentracker.xyz:443/announce,http://tracker4.itzmx.com:2710/announce,http://tracker3.itzmx.com:6961/announce,http://tracker.city9x.com:2710/announce,http://opentracker.xyz:80/announce,http://open.trackerlist.xyz:80/announce,udp://tracker2.itzmx.com:6961/announce,udp://tracker.swateam.org.uk:2710/announce,udp://tracker.kamigami.org:2710/announce,udp://tracker.ds.is:6969/announce,udp://pubt.in:2710/announce,http://tracker2.itzmx.com:6961/announce,http://tracker.torrentyorg.pl:80/announce,http://t.nyaatracker.com:80/announce,http://share.camoe.cn:8080/announce,http://retracker.mgts.by:80/announce,http://open.acgtracker.com:1096/announce,wss://tracker.openwebtorrent.com:443/announce,wss://tracker.fastcast.nz:443/announce,wss://tracker.btorrent.xyz:443/announce,udp://tracker.justseed.it:1337/announce,udp://packages.crunchbangplusplus.org:6969/announce,https://1337.abcvg.info:443/announce,http://agusiq-torrents.pl:6969/announce
+
+# 为 BT 下载设置 TCP 端口号，确保开放这些端口，默认 6881-6999
+listen-port=65298
+#Set UDP listening port used by DHT(IPv4, IPv6) and UDP tracker
+dht-listen-port=65298
+# 整体上传速度限制，0 表示不限制，默认 0
+#max-overall-upload-limit=0
+# 每个下载上传速度限制，默认 0
+#max-upload-limit=0
+# 种子分享率大于1, 则停止做种，默认 1.0
+#seed-ratio=1
+# 做种时间大于2小时，则停止做种
+seed-time=120
+# RPC 配置
+# 开启 JSON-RPC/XML-RPC 服务，默认 false
+enable-rpc=true
+# 允许所有来源，web 界面跨域权限需要，默认 false
+rpc-allow-origin-all=true
+# 允许外部访问，默认 false
+rpc-listen-all=true
+# rpc 端口，默认 6800
+rpc-listen-port=6800
+# 设置最大的 JSON-RPC/XML-RPC 请求大小，默认 2M
+#rpc-max-request-size=2M
+# rpc 密码，可不设置
+#rpc-passwd=raspberry
+# rpc 用户名，可不设置
+#rpc-user=aria2pi
+# 高级配置
+# This is useful if you have to use broken DNS and
+# want to avoid terribly slow AAAA record lookup.
+# 默认 false
+disable-ipv6=true
+# 指定文件分配方法，预分配能有效降低文件碎片，提高磁盘性能，缺点是预分配时间稍长
+# 如果使用新的文件系统，例如 ext4 (with extents support), btrfs, xfs or NTFS(MinGW build only), falloc 是最好的选择
+# 如果设置为 none，那么不预先分配文件空间，默认 prealloc
+file-allocation=none
+# 整体下载速度限制，默认 0
+#max-overall-download-limit=0
+# 每个下载下载速度限制，默认 0
+#max-download-limit=0
+# 保存错误或者未完成的下载到这个文件
+# 和基本配置中的 input-file 一起使用，那么重启后仍可继续下载
+save-session=/root/aria2/aria2.session
+# 每5分钟自动保存错误或未完成的下载，如果为 0, 只有 aria2 正常退出才回保存，默认 0
+save-session-interval=300
+# 若要用于 PT 下载，需另外的配置，这里没写
+
+# 远程访问所需token密码
+rpc-secret=xxxxx 
+# 设置user-agent
+user-agent=Mozilla/5.0 (Series40; Nokia2055/03.20; Profile/MIDP-2.1 Configuration/CLDC-1.1) Gecko/20100401 S40OviBrowser/5.5.0.0.27
+
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="aria2-bt加速">aria2 bt加速</h4>
+<p><a href="https://github.com/ngosang/trackerslist">https://github.com/ngosang/trackerslist</a>  设置bt track 加速bt下载<br>
+<a href="http://www.senra.me/solutions-to-aria2-bt-metalink-download-slowly/">http://www.senra.me/solutions-to-aria2-bt-metalink-download-slowly/</a></p>
+<h4 id="aria2-开机启动">aria2 开机启动</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">touch /etc/init.d/aria2c
+vim /etc/init.d/aria2c   输入以下
+</code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+</span><span class="cp"></span><span class="c1">### BEGIN INIT INFO</span>
+<span class="c1"># Provides:          aria2</span>
+<span class="c1"># Required-Start:    $remote_fs $network</span>
+<span class="c1"># Required-Stop:     $remote_fs $network</span>
+<span class="c1"># Default-Start:     2 3 4 5</span>
+<span class="c1"># Default-Stop:      0 1 6</span>
+<span class="c1"># Short-Description: Aria2 Downloader</span>
+<span class="c1">### END INIT INFO</span>
+do_start<span class="o">()</span>
+<span class="o">{</span>
+        <span class="nb">echo</span> -n <span class="s2">&#34;Starting aria2c&#34;</span>
+             su root -c <span class="s2">&#34;aria2c --conf-path=/root/aria2/aria2.conf -D&#34;</span>
+            <span class="c1">#这里的路径根据自己的来更改</span>
+<span class="o">}</span>
+do_stop<span class="o">()</span>
+<span class="o">{</span>
+     <span class="nb">echo</span> -n <span class="s2">&#34;Shutting down aria2c &#34;</span>
+        pkill -f aria2c
+<span class="o">}</span>
+do_restart<span class="o">()</span> <span class="o">{</span>
+    do_stop
+    sleep <span class="m">1</span>
+    do_start
+<span class="o">}</span>
+<span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> in
+start<span class="o">)</span>
+   do_start
+   <span class="p">;;</span>
+stop<span class="o">)</span>
+   do_stop
+   <span class="p">;;</span>
+status<span class="o">)</span>
+  <span class="nb">exit</span> <span class="nv">$?</span>
+  <span class="p">;;</span>
+restart<span class="o">)</span>
+  do_restart
+  <span class="p">;;</span>
+*<span class="o">)</span>
+   <span class="nb">echo</span> <span class="s2">&#34;Usage: service aria2c {start|stop|status|restart}&#34;</span> &gt;<span class="p">&amp;</span><span class="m">2</span>
+   <span class="nb">exit</span> <span class="m">1</span>
+   <span class="p">;;</span>
+<span class="k">esac</span>
+<span class="nb">exit</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>程序自启动  sudo update-rc.d aria2c defaults</p>
+<h4 id="安装web访问">安装web访问</h4>
+<p>先安装web服务器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">apt-get install nginx -y
+
+cd /var/www/html
+
+wget https://github.com/mayswind/AriaNg/releases/download/0.5.0/AriaNg-0.5.0.zip
+
+unzip AriaNg-0.5.0.zip
+
+rm -rf AriaNg-0.5.0.zip
+
+service nginx restart
+</code></pre></td></tr></table>
+</div>
+</div><p>至此就可以通过 host:80 访问 aria2 服务了, 需要配置json-rpc 配置成功后就可以访问</p>
+<h3 id="若在centos-环境下安装">若在centos 环境下安装</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">wget 下载https://github.com/aria2/aria2/releases/download/release-1.34.0/aria2-1.34.0.tar.gz
+安装依赖
+yum install bison libssh2-devel expat-devel gmp-devel nettle-devel libuv-devel libssh2-devel zlib-devel c-ares-devel cppunit-devel gnutls-devel libgcrypt-devel libxml2-devel sqlite-devel gettext lzma-devel xz-devel gperftools gperftools-devel gperftools-libs jemalloc-devel
+./configure &amp;&amp; make &amp;&amp; make install
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="若出现字符问题">若出现字符问题</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">line 1761: warning: setlocale: LC_CTYPE: cannot change locale (UTF-8): No such file or directory
+vim ~/.zshrc 后面增加 
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
+</code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">LAYIN.</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-12-28
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/2018/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F-frp/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">树莓派内网穿透 frp</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2018/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85%E6%95%B0%E6%8D%AE%E5%BA%93/">
+            <span class="next-text nav-default">树莓派安装数据库</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'ieHv8qzG0qV0uKhsp4yfQCqL-gzGzoHsz',
+        appKey: 'SvMR79Dgw4dzKYibaTzpdVdB',
+        notify:  false ,
+        verify:  false ,
+        avatar:'mm',
+        placeholder: '说点什么吧...',
+        visitor:  false 
+    });
+  </script>
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:403907871@qq.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/Zidoing" class="iconfont icon-github" title="github"></a>
+  <a href="https://daodaoio.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>LAYIN.</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/raphael@2.2.7/raphael.min.js" integrity="sha256-67By+NpOtm9ka1R6xpUefeGOY8kWWHHRAKlvaTJ7ONI=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/flowchart.js@1.8.0/release/flowchart.min.js" integrity="sha256-zNGWjubXoY6rb5MnmpBNefO0RgoVYfle9p0tvOQM+6k=" crossorigin="anonymous"></script><script></script><script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.js" integrity="sha256-4O4pS1SH31ZqrSO2A/2QJTVjTPqVe+jnYgOWUVr7EEc=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/snapsvg@0.5.1/dist/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/npm/underscore@1.8.3/underscore-min.js" integrity="sha256-obZACiHd7gkOk9iIL/pimWMTJ4W/pBsKu+oZnSeBIek=" crossorigin="anonymous"></script> <script src="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.js" integrity="sha384-8748Vn52gHJYJI0XEuPB2QlPVNUkJlJn9tHqKec6J3q2r9l8fvRxrgn/E5ZHV0sP" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bramp/js-sequence-diagrams@2.0.1/dist/sequence-diagram-min.css" integrity="sha384-6QbLKJMz5dS3adWSeINZe74uSydBGFbnzaAYmp+tKyq60S7H2p6V7g1TysM5lAaF" crossorigin="anonymous">
+
+
+
+<script type="text/javascript" src="/js/main.min.c12618f9a600c40bd024996677e951e64d3487006775aeb22e200c990006c5c7.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
